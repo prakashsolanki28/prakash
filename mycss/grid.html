@@ -1,0 +1,565 @@
+<html ng-app="myApp">
+  <head>
+ 
+
+
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <style type="text/css">
+  			section
+		{
+			 width:90%;
+			 margin: auto;
+			 margin-top:0px;
+		}
+		*::-webkit-scrollbar {
+		    display: none;
+		    }
+		.sticky {
+				  position:-webkit-sticky;
+				  position: sticky;
+				  top: 0;
+				  padding-top:40px;
+				  font-size: 20px;
+				}
+		.mysticky
+				{
+					  position: sticky;
+				  	  top: 0;
+				  	  padding-top:0px;
+				  	 z-index: 999;
+				}
+		.responsee
+		{
+			  border:1px solid;
+			  padding: 20px; 
+			  width:100%;
+			  resize:horizontal;
+			  overflow:auto;
+		}		
+  </style>
+
+
+  </head>
+<body style="background-color: #f1f1f1;">
+
+
+
+		<div class="fixed-action-btn">
+		  <a class="btn-floating btn-large red">
+		    <i class="large material-icons">mode_edit</i>
+		  </a>
+		  <ul>
+		   <li><a class="btn-floating blue"><i class="material-icons"><i class="fa fa-facebook"></i></i></a></li>
+		 <li><a class="btn-floating red darken-1"><i class="fa-icons"><i class="fa fa-instagram"></i></i></a></li>
+		 <li><a class="btn-floating green darken-1"><i class="fa-icons"><i class="fa fa-whatsapp"></i></i></a></li>
+		 <li><a class="btn-floating dark darken-1"><i class="fa-icons"><i class="fa fa-envelope-o"></i></a></li>
+		  </ul>
+		</div>
+
+		<div class="container-fluid shadow" style="padding:40px 5px 40px 5px; background-color: #fff;">
+		 <div class="fixedheader">
+		<div class="mysticky">	
+
+		<ul class="nav nav-tabs" style="background-color:#f1f1f1;">
+		  <li class="nav-item">
+		    <a class="nav-link"  data-toggle="collapse" data-target="#profile" aria-expanded="true" aria-controls="collapseOne"  id="pro" href="#">Getting Started</a>
+		  </li>
+		  <li class="nav-item dropdown">
+		    <a id="drop"  class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+		    <div class="dropdown-menu">
+			     <a class="dropdown-item" id="updateemail" data-toggle="collapse" href="#emailid" role="button" aria-expanded="false" aria-controls="emailid">Css</a>
+
+			      <a class="dropdown-item" id="updatepass" data-toggle="collapse" href="#formcollapse" role="button" aria-expanded="false" aria-controls="formcollapse">Bootstarp</a>
+
+			       <a class="dropdown-item" type="button" data-toggle="collapse" data-target="#contactcollapse" aria-expanded="false" id="updatecon" aria-controls="contactcollapse">Materializecss</a>
+		    </div>
+		  </li>
+		  <li class="nav-item">
+		    <!-- <a class="nav-link red-text " href="logout.php">Logout</a> -->
+		  </li>
+		</ul>
+		
+</div>
+
+
+
+<br><br>
+
+
+
+
+  <div class="row collapse show"  id="profile" >
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Getting Started</span>
+           <div class="card-action">
+	          <a type="button" class="btn" id="aemail" data-toggle="collapse" data-target="#emailid" aria-expanded="false" id="updatecon" aria-controls="emailid" style="margin-bottom:10px;">Mycode</a>
+	            <a type="button" class="btn" id="acontact" data-toggle="collapse" data-target="#formcollapse" aria-expanded="false" id="updatecon" aria-controls="formcollapse" style="margin-bottom:10px;">Bootstarp</a>
+	             <a type="button" class="btn" id="apassword" data-toggle="collapse" data-target="#contactcollapse" aria-expanded="false" id="updatecon" aria-controls="contactcollapse" style="margin-bottom:10px;">Materializecss</a>
+	            <!--  <a type="button" id="acontact" data-toggle="collapse" data-target="#contactcollapse" aria-expanded="false" id="updatecon" aria-controls="contactcollapse">Java Scripts</a> -->
+
+	      </div>
+        </div>
+        <div class="card-action">
+       
+           <a class="btn-floating btn-small waves-effect waves-light red"><i class="fa fa-instagram"></i></a>
+           <a class="btn-floating btn-small waves-effect waves-light blue"><i class="fa fa-facebook"></i></a>
+           <a class="btn-floating btn-small waves-effect waves-light green"><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+         
+
+
+
+
+
+
+
+<div class="collapse multi-collapse" id="emailid">
+	<section>
+      <h2 class="center">Grid system</h2>
+     	 <div class="row">
+       		 <div class="col-sm-4 offset-4"><hr style="height:2px;border-width:0;color:gray;background-color:gray;"></div>
+     	 </div>
+	</section>
+	<hr>
+
+
+	 <div class="row">
+
+
+
+	 	<!-- access recently files heder -->
+		 	 <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only">
+		 	 	<div class="sticky">
+		 	 		<h1 style="font-size: 20px;">Prakash Solanki</h1>
+			       <ul class="collapsible" style="margin-left:-18px;">
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">home</i>Home</div>
+					    </li>
+					    <li class="onclick0">
+					      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow0" aria-hidden="true"></i></i>CSS</div>
+					      <div class="collapsible-body">
+					            <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Color</div>
+					            </li>
+					             <a href="mycss/grid.html" class="text_d"> <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Grid</div>
+					            </li></a>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Shadow</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Table</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					    <li class="onclick1">
+					      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow1" aria-hidden="true"></i></i>Components</div>
+					      <div class="collapsible-body">
+					          <ul >
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Buttons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Breadcrumbs</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Cards</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collections</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Footer</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Icons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Navbar</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Preloader</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					     <li class="onclick2">
+					       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow2" aria-hidden="true"></i></i>Forms</div>
+					       <div class="collapsible-body">
+					          <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Autocomplete</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Checkboxes</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Chips</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Radio Buttons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Range</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Select</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Switches</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Text Inputs</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					     <li class="onclick">
+					       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow" aria-hidden="true"></i></i>Java Script</div>
+					      <div class="collapsible-body">
+					          <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Carousel</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collapsible</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Dropdown</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Modals</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tabs</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Toasts</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tooltips</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					  </ul>
+			  </div>
+		  </div>
+
+<!-- contents -->
+	    <div class="col-12 col-sm-12 col-md-2 col-md-8 col-lg-8 col-xl-8" style="padding-left:30px;">
+	      <div id="introduction"class="section scrollspy">
+		      	<h4>Introduction</h4>
+		       	<p>A grid system in graphic design uses a two-dimensional framework to align and lay out design elements. Breaking down a single design space<br> into a grid can help position individual components in ways that can catch the eye, create a user flow and make information and visuals<br> more appealing and accessible to audiences.</p>
+
+		       	<h4>Responsive Web Design</h4>
+		       	<p>Web pages can be viewed using many different devices: desktops, tablets, and phones. Your web page should look good, and be easy to use, regardless of the device.</p>
+		       	<p>Web pages should not leave out information to fit smaller devices, but rather adapt its content to fit any device:</p>
+
+		       	<div class="row">
+		       		<div class="col-lg-6 col-xl-6 col-md-4 col-sm-12 col-12">
+		       			<img src="../images/css/desktop.png" class="tooltipped responsive-img" data-position="bottom" data-tooltip="Desktop Size">	
+		       		</div>
+		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12"  style="display:flex; justify-content:center;align-items:center;">
+		       			<img src="../images/css/tablet.png" class="tooltipped" data-position="bottom" data-tooltip="Tablet Size">
+		       		</div>
+		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12"  style="display:flex; justify-content:center;align-items:center;">
+		       			<img src="../images/css/phone.png" class="tooltipped" data-position="bottom" data-tooltip="Phone Size">	
+		       		</div>
+		       		
+		       	</div>
+		       	<P>It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen.</P>
+		       	
+		       	<ul class="collapsible">
+				    <li>
+				      <div class="collapsible-header">Try it Yourself <i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
+				      <div class="collapsible-body">
+				      	<div class="row tooltipped" data-position="bottom" data-tooltip="This is a Row ">
+				      		<div class="col-12 blue">
+				      			<h6 class="center-align">Prakash Solanki</h6>
+				      		</div>
+				      	</div>
+				      	<div class="row">
+				      		<div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 ">
+				      			<div class="row">
+				      				<div class="col-12 blue tooltipped" data-position="bottom" data-tooltip="This is a Column 1" style="margin-bottom:5px; padding:10px;">
+				      					p
+				      				</div>
+				      				<div class="col-12 blue tooltipped" data-position="bottom" data-tooltip="This is a Column 2" style="margin-bottom:5px; padding:10px;">
+				      					r
+				      				</div>
+				      				<div class="col-12 blue tooltipped" data-position="bottom" data-tooltip="This is a Column 3" style="margin-bottom:5px; padding:10px;">
+				      					a
+				      				</div>
+				      				<div class="col-12 blue tooltipped" data-position="bottom" data-tooltip="This is a Column 4" style="margin-bottom:5px; padding:10px;">
+				      					k
+				      				</div>
+				      				<div class="col-12 blue tooltipped"  data-position="bottom" data-tooltip="This is a Column 5"style="margin-bottom:5px; padding:10px;">
+				      					a
+				      				</div>
+				      			</div>
+				      		</div>
+				      		<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8  tooltipped" data-position="bottom" data-tooltip="This is a Column 2">
+				      			<h6 class="center-left">Prakash Solanki</h6>
+				      			<p>Hello! friends My name is prakash Solanki</p>
+				      		</div>
+				      		<div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 blue tooltipped" data-position="bottom" data-tooltip="This is a Column 3">
+				      			<h6 class="center-align">Prakash Solanki</h6>
+				      			<h6 class="center-align">Prakash Solanki</h6>
+				      			<h6 class="center-align">Prakash Solanki</h6>
+				      			<h6 class="center-align">Prakash Solanki</h6>
+				      		</div>
+				      	</div>
+				      		<div class="row tooltipped" data-position="bottom" data-tooltip="This is a Row ">
+				      		<div class="col-12 blue">
+				      		<h6 class="center-align white-text">Resize the browser window to see how the content respond to the resizing.</h6>
+				      		</div>
+				      	</div>
+				      </div>
+				    </li>
+				  </ul>
+		       	
+	      </div>
+
+	      <div id="structure" class="section scrollspy">
+	        <p>Content </p>
+	 
+	      </div>
+
+	      <div id="initialization" class="section scrollspy">
+	        <p>Content </p>
+	      </div>
+	    </div>
+	    <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only" >
+	    	<div class="sticky">
+		      <ul class="section table-of-contents">
+		        <li><a href="#introduction">Introduction</a></li>
+		        <li><a href="#structure">Responsive Web Design</a></li>
+		        <li><a href="#initialization">Intialization</a></li>
+		      </ul>
+	 	 </div>
+	    </div>
+
+	  </div>
+</div>
+</div>
+
+
+
+
+<div class="collapse multi-collapse" id="formcollapse">
+	<section>
+      <h2 class="center">Components</h2>
+     	 <div class="row">
+       		 <div class="col-sm-4 offset-4"><hr style="height:2px;border-width:0;color:gray;background-color:gray;"></div>
+     	 </div>
+	</section>
+<div class="container">
+ <div class="row">
+	 <div class="col">	
+		  <div class="collection">
+		    <a href="#!" class="collection-item"><span class="new badge">4</span>Colors</a>
+		 
+		  </div>
+	</div>
+</div>
+</div>
+</div>
+
+
+<div class="row collapse multi-collapse" id="contactcollapse">
+	 <div class="col">
+			
+			<form class="needs-validation" action="" method="POST" novalidate>
+				  <div class="form-row">
+				    <div style="visibility:hidden;" class="col-md-3 mb-3 d-none d-sm-none d-md-block">
+				      <input type="text" class="form-control" >
+				    </div>
+				    <div class="col-md-6 mb-3">
+				      <label for="validationCustom02">Contact Number</label>
+				      <input type="text" class="form-control" id="validationCustom02" value="<?php echo $resu['conatct']; ?>" readonly>
+				      <div class="valid-feedback">
+				        Looks good!
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-row">
+				    <div  style="visibility:hidden;" class="col-md-3 mb-3 d-none d-sm-none d-md-block">
+				      <input type="text" class="form-control" >
+				    </div>
+				    <div class="col-md-6 mb-3">
+				      <label for="validationCustom03">New Contact Number</label>
+				      <input type="text" class="form-control" name="newcontact" placeholder="Enter New Contact Number" id="validationCustom03" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid city.
+				      </div>
+				    </div>
+				
+				  </div>
+				 
+				  <div class="d-flex justify-content-center">
+				      <button class="btn btn-primary"  name="updatecontact" type="submit">Update Contact</button>
+				  </div>
+				</form>
+
+		
+	
+	</div>
+</div>
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+	     
+
+$(document).ready(function(){
+     $('.sidenav').sidenav();
+     $('.dropdown-trigger').dropdown();
+     $('.slider').slider();
+     $('.collapsible').collapsible();
+     $('.materialboxed').materialbox();
+      $('.tooltipped').tooltip();
+
+     $('.onclick').click(function(){
+         $('.arrow').toggleClass('fa-angle-right',1000);
+         $('.arrow').toggleClass('fa-angle-down',1000);
+     });
+
+     $('.onclick1').click(function(){
+         $('.arrow1').toggleClass('fa-angle-right',1000);
+         $('.arrow1').toggleClass('fa-angle-down',1000);
+     });
+      $('.onclick0').click(function(){
+         $('.arrow0').toggleClass('fa-angle-right',1000);
+         $('.arrow0').toggleClass('fa-angle-down',1000);
+     });
+       $('.onclick2').click(function(){
+         $('.arrow2').toggleClass('fa-angle-right',1000);
+         $('.arrow2').toggleClass('fa-angle-down',1000);
+     });
+  });
+
+
+   $(document).ready(function()
+    {		
+    	$('.scrollspy').scrollSpy();
+     $('.collapsible').collapsible();
+
+
+    		 $('.fixed-action-btn').floatingActionButton({
+				    
+				  });
+
+                  		 $('#pro').toggleClass('active');
+
+
+			        $("#drop").click(function()
+			        {
+			       	 $('#pro').removeClass('active');
+                     $('#drop').addClass('active');
+      				});
+
+      				$("#pro").click(function()
+			        {
+			       	    $('#drop').removeClass('active');
+                  		 $('#pro').toggleClass('active');
+			       	   
+			       	   $('#formcollapse').collapse('hide')
+			       	   $('#contactcollapse').collapse('hide')
+			       	   $('#emailid').collapse('hide')
+
+
+      				});
+
+			        $("#updatepass").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#contactcollapse').collapse('hide')
+			       	   $('#emailid').collapse('hide')
+
+      				});
+
+      				
+      				$("#updatecon").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#formcollapse').collapse('hide')
+			       	   $('#emailid').collapse('hide')
+
+      				});
+      				$("#updateemail").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#formcollapse').collapse('hide')
+			       	   $('#contactcollapse').collapse('hide')
+			       	   
+      				});
+
+
+
+			        $("#apassword").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#contactcollapse').collapse('hide')
+			       	   $('#emailid').collapse('hide')
+
+      				});
+
+      				
+      				$("#acontact").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#formcollapse').collapse('hide')
+			       	   $('#emailid').collapse('hide')
+
+      				});
+      				$("#aemail").click(function()
+			        {
+			       	   $('#profile').collapse('hide')
+			       	   $('#formcollapse').collapse('hide')
+			       	   $('#contactcollapse').collapse('hide')
+			       	   
+      				});
+
+      			
+
+      				
+
+});
+			      
+</script>
+
+    
+  </body>
+</html>
