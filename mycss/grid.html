@@ -51,7 +51,8 @@
 			  width:100%;
 			  resize:horizontal;
 			  overflow:auto;
-		}		
+		}	
+
   </style>
 
 
@@ -286,14 +287,17 @@
 		       	<p>Web pages should not leave out information to fit smaller devices, but rather adapt its content to fit any device:</p>
 
 		       	<div class="row">
-		       		<div class="col-lg-6 col-xl-6 col-md-4 col-sm-12 col-12">
+		       		<div class="col-lg-6 col-xl-6 col-md-4 col-sm-12 col-12" style="margin-bottom:10px;">
 		       			<img src="../images/css/desktop.png" class="tooltipped responsive-img" data-position="bottom" data-tooltip="Desktop Size">	
+		       			<p class="center-align">Desktop Size</p>
 		       		</div>
-		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12"  style="display:flex; justify-content:center;align-items:center;">
+		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12" style="margin-bottom:10px;"  style="justify-content:center;align-items:center;">
 		       			<img src="../images/css/tablet.png" class="tooltipped" data-position="bottom" data-tooltip="Tablet Size">
+		       			<p class="center-align">Tablet Size</p>
 		       		</div>
-		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12"  style="display:flex; justify-content:center;align-items:center;">
+		       		<div class="col-lg-3 col-xl-3 col-md-4 col-sm-12 col-12" style="margin-bottom:10px;"  style="justify-content:center;align-items:center;">
 		       			<img src="../images/css/phone.png" class="tooltipped" data-position="bottom" data-tooltip="Phone Size">	
+		       			<p class="center-align">Phone Size</p>
 		       		</div>
 		       		
 		       	</div>
@@ -301,7 +305,7 @@
 		       	
 		       	<ul class="collapsible">
 				    <li>
-				      <div class="collapsible-header">Try it Yourself <i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
+				      <div class="collapsible-header">Example<i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
 				      <div class="collapsible-body">
 				      	<div class="row tooltipped" data-position="bottom" data-tooltip="This is a Row ">
 				      		<div class="col-12 blue">
@@ -346,13 +350,82 @@
 				      	</div>
 				      </div>
 				    </li>
+				     <li>
+					      <div class="collapsible-header">Code<i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
+					      <div class="collapsible-body" style=" background-color:#f1f1f1;">
+					      	  <div style="width:100%;">
+					      	 	code
+					      	  </div>
+					      </div>
+					 </li>
+
 				  </ul>
 		       	
 	      </div>
 
 	      <div id="structure" class="section scrollspy">
-	        <p>Content </p>
-	 
+	        <h3>Grid Elements</h3>
+	        <p>A grid layout consists of a parent element, with one or more child elements</p>
+	 				
+<ul class="collapsible" style=" font-family: Consolas,'courier new';">
+	<li>
+	 <div class="collapsible-header">Code<i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
+		<div class="collapsible-body" style=" background-color:#f1f1f1;">
+			<span class="right"><button class="btn" onclick="copyToClipboard('#p1')">Copy</button></span>
+			<div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre ><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>auto</span><span> </span><span>auto</span><span> </span><span>auto</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >.grid-item</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>border</span><span>: </span><span>1px</span><span> </span><span>solid</span><span> </span><span>rgba</span><span>(</span><span>0</span><span>, </span><span>0</span><span>, </span><span>0</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>Grid Elements</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>A Grid Layout must have a parent element with the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>display</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property set to </span><span>&lt;</span><span>em</span><span>&gt;</span><span>grid</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> or </span><span>&lt;</span><span>em</span><span>&gt;</span><span>inline-grid</span><span>&lt;/</span><span>em</span><span>&gt;</span><span>.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Direct child element(s) of the grid container automatically becomes grid items.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>7</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>8</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-item"</span><span>&gt;</span><span>9</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre></div>
+	</div>
+	</li>
+	<li>
+		<div class="collapsible-header">Output<i class="material-icons"><i class="fa fa-angle-right"></i></i></div>
+		<div class="collapsible-body" style="background-color:#f1f1f1;">
+				<!DOCTYPE html>
+				<html>
+				<head>
+				<style>
+				.grid-container {
+				  display: grid;
+				  grid-template-columns: auto auto auto;
+				  background-color: #2196F3;
+				  padding: 10px;
+				}
+				.grid-item {
+				  background-color: rgba(255, 255, 255, 0.8);
+				  border: 1px solid rgba(0, 0, 0, 0.8);
+				  padding: 20px;
+				  font-size: 30px;
+				  text-align: center;
+				}
+				</style>
+				</head>
+				<body>
+
+				<h1>Grid Elements</h1>
+
+				<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+				<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+					<div class="grid-container">
+					  <div class="grid-item">1</div>
+					  <div class="grid-item">2</div>
+					  <div class="grid-item">3</div>  
+					  <div class="grid-item">4</div>
+					  <div class="grid-item">5</div>
+					  <div class="grid-item">6</div>  
+					  <div class="grid-item">7</div>
+					  <div class="grid-item">8</div>
+					  <div class="grid-item">9</div>  
+					</div>
+
+				</body>
+				</html>
+	
+		</div>
+			
+	</li>
+	
+
+				  </ul>
 	      </div>
 
 	      <div id="initialization" class="section scrollspy">
@@ -363,7 +436,7 @@
 	    	<div class="sticky">
 		      <ul class="section table-of-contents">
 		        <li><a href="#introduction">Introduction</a></li>
-		        <li><a href="#structure">Responsive Web Design</a></li>
+		        <li><a href="#structure">CSS Grid Intro</a></li>
 		        <li><a href="#initialization">Intialization</a></li>
 		      </ul>
 	 	 </div>
@@ -442,6 +515,7 @@
 
 <script type="text/javascript">
 	     
+
 
 $(document).ready(function(){
      $('.sidenav').sidenav();
