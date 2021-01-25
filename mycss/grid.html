@@ -51,6 +51,13 @@
 			  resize:horizontal;
 			  overflow:auto;
 		}	
+		.b-grid
+		{
+			background-color:#f1f1f1;
+			 border-bottom:5px solid #fff;
+			  padding:10px 20px;
+			   border-right:5px solid #fff;
+		}
 
   </style>
 
@@ -982,7 +989,7 @@
 					    <li>
 					      <div class="collapsible-header"><i class="material-icons">code</i>Example : Set a size for the 4 columns:</div>
 					      <div class="collapsible-body" style="background-color:#f1f1f1;">
-					      			<div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 193.653px; top: 213.333px; height: 17.7778px;">&nbsp;</div></div><div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>80px</span><span> </span><span>200px</span><span> </span><span>auto</span><span> </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>grid-template-columns</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>grid-template-columns</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to specify the size of each column.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span">class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>7</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>8</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre></div></div></div>
+					      			<div ><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div><div style="left: 193.653px; top: 213.333px; height: 17.7778px;">&nbsp;</div></div><div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>80px</span><span> </span><span>200px</span><span> </span><span>auto</span><span> </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>grid-template-columns</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>grid-template-columns</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to specify the size of each column.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span">class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>7</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>8</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >​</span></span></pre></div></div></div>
 					      </div>
 					    </li>
 					    <li>
@@ -1068,13 +1075,13 @@
 							  <div>6</div>  
 							</div>
 							</body>
-							</html>
+							</html><br>
 
 					<ul class="collapsible">
 					    <li>
 					      <div class="collapsible-header"><i class="material-icons">code</i>Example :</div>
 					      <div class="collapsible-body" style="background-color:#f1f1f1;">
-					      		<div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div ></div><div style="position: relative; z-index: 1;"></div><div  style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 144.181px; top: 71.1111px; height: 17.7778px;">&nbsp;</div></div><div  style=""><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>auto</span><span> </span><span>auto</span><span> </span><span>auto</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-rows</span><span>: </span><span>80px</span><span> </span><span>200px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>The grid-template-rows Property</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>grid-template-rows</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to specify the size (height) of each row.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div>
+					      		<div ><div style="position: relative; outline: none;"><div></div><div ></div><div style="position: relative; z-index: 1;"></div><div  style="visibility: hidden;"><div style="left: 144.181px; top: 71.1111px; height: 17.7778px;">&nbsp;</div></div><div  ><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>auto</span><span> </span><span>auto</span><span> </span><span>auto</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-rows</span><span>: </span><span>80px</span><span> </span><span>200px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>The grid-template-rows Property</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>grid-template-rows</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to specify the size (height) of each row.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div>
 					      </div>
 					    </li>
 					    <li>
@@ -1161,9 +1168,339 @@
 
 
 						</body>
-						</html>
+						</html><br>
+						 <div class="alert alert-warning" role="alert">
+					 		 <span class="black-text">Note&nbsp;&nbsp;:&nbsp;&nbsp;</span> The grid's total width has to be less than the container's width for the justify-content property to have any effect..
+						</div><br>
 
 
+					<ul class="collapsible">
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content:space-evenly;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      		
+					      		<div ><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div style="visibility: hidden;"><div style="left: 135.958px; top: 88.8889px; height: 17.7778px;">&nbsp;</div></div><div ><pre><span style="padding-right: 0.1px;"><span >&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>justify-content</span><span>: </span><span>space-evenly</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>50px</span><span> </span><span>50px</span><span> </span><span>50px</span><span>; </span><span >/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>The justify-content Property</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>justify-content</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to align the grid inside the container.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>The value "space-evenly" will give the columns equal amount of space between, and around them:</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div>
+
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      		
+					      			<!DOCTYPE html>
+										<html>
+										<head>
+										<style>
+										.grid-container1c {
+										  display: grid;
+										  justify-content:space-evenly;
+										  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+										  grid-gap: 10px;
+										  background-color: #2196F3;
+										  padding: 10px;
+										}
+
+										.grid-container1c > div {
+										  background-color: rgba(255, 255, 255, 0.8);
+										  text-align: center;
+										  padding: 20px 0;
+										  font-size: 30px;
+										}
+										</style>
+										</head>
+										<body>
+
+										<h5>The justify-content Property</h5><br>
+
+										<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+										<p>The value "space-evenly" will give the columns equal amount of space between, and around them:</p><br>
+
+										<div class="grid-container1c">
+										  <div>1</div>
+										  <div>2</div>
+										  <div>3</div>  
+										  <div>4</div>
+										  <div>5</div>
+										  <div>6</div>  
+										</div>
+
+
+										</body>
+										</html>
+
+					      </div>
+					    </li>
+					     <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content: space-around;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      		<div ><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div style="visibility: hidden;"><div style="left: 12.25px; top: 195.556px; height: 17.7778px;">&nbsp;</div></div><div ><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>justify-content</span><span>: </span><span>space-around</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>50px</span><span> </span><span>50px</span><span> </span><span>50px</span><span>; </span><span>/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span>div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><spand>(</span><span>255</span><spand>, </span><span>255</span><spand>, </span><span>255</span><spand>, </span><span>0.8</span><spand>);</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>text-align</span><spand>: </span><span>center</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>padding</span><spand>: </span><span>20px</span><spand> </span><span>0</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>font-size</span><spand>: </span><span>30px</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>The justify-content Property</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>justify-content</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to align the grid inside the container.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>The value "space-around" will give the columns equal amount of space around them:</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div>
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      		<!DOCTYPE html>
+									<html>
+									<head>
+									<style>
+									.grid-container1d {
+									  display: grid;
+									  justify-content: space-around;
+									  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+									  grid-gap: 10px;
+									  background-color: #2196F3;
+									  padding: 10px;
+									}
+
+									.grid-container1d > div {
+									  background-color: rgba(255, 255, 255, 0.8);
+									  text-align: center;
+									  padding: 20px 0;
+									  font-size: 30px;
+									}
+									</style>
+									</head>
+									<body>
+
+									<h5>The justify-content Property</h5>
+
+									<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+									<p>The value "space-around" will give the columns equal amount of space around them:</p>
+									<br>
+									<div class="grid-container1d">
+									  <div>1</div>
+									  <div>2</div>
+									  <div>3</div>  
+									  <div>4</div>
+									  <div>5</div>
+									  <div>6</div>  
+									</div>
+
+
+									</body>
+									</html>
+
+					      </div>
+					    </li>
+
+					     <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content: space-between;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      	
+					      		<div ><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div ><div style="left: 4px; top: 213.333px; height: 17.7778px;">&nbsp;</div></div><div ><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><spand> {</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>display</span><spand>: </span><span>grid</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>justify-content</span><spand>: </span><span>space-between</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>grid-template-columns</span><spand>: </span><span>50px</span><spand> </span><span>50px</span><spand> </span><span>50px</span><spand>; </span><span>/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>grid-gap</span><spand>: </span><span>10px</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>background-color</span><spand>: </span><span>#2196F3</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>padding</span><spand>: </span><span>10px</span><spand>;</span></span></pre><pre><span style="padding-right: 0.1px;"><spand>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><spand> &gt; </span><span>div</span><spand> {</span></span></pre><pre><span style="padding-right: 0.1px;"><spand> &nbsp;</span><span>background-color</span><spand>: </span><span>rgba</span><spand>(</span><span>255</span><spand>, </span><span>255</span><spand>, </span><span>255</span><spand>, </span><span>0.8</span><spand>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>style</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>head</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>h1</span><span>&gt;</span><span>The justify-content Property</span><span>&lt;/</span><span>h1</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>Use the </span><span>&lt;</span><span>em</span><span>&gt;</span><span>justify-content</span><span>&lt;/</span><span>em</span><span>&gt;</span><span> property to align the grid inside the container.</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>p</span><span>&gt;</span><span>The value "space-between" will give the columns equal amount of space between them:</span><span>&lt;/</span><span>p</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>1</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>2</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>3</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>4</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>5</span><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>&lt;</span><span>div</span><span>&gt;</span><span>6</span><span>&lt;/</span><span>div</span><span>&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>div</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>body</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>&lt;/</span><span>html</span><span>&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>​</span></span></pre></div></div></div>
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      		<!DOCTYPE html>
+									<html>
+									<head>
+									<style>
+									.grid-container1e {
+									  display: grid;
+									  justify-content: space-between;
+									  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+									  grid-gap: 10px;
+									  background-color: #2196F3;
+									  padding: 10px;
+									}
+
+									.grid-container1e > div {
+									  background-color: rgba(255, 255, 255, 0.8);
+									  text-align: center;
+									  padding: 20px 0;
+									  font-size: 30px;
+									}
+									</style>
+									</head>
+									<body>
+
+									<h5>The justify-content Property</h5>
+
+									<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+									<p>The value "space-between" will give the columns equal amount of space between them:</p>
+									<br>
+									<div class="grid-container1e">
+									  <div>1</div>
+									  <div>2</div>
+									  <div>3</div>  
+									  <div>4</div>
+									  <div>5</div>
+									  <div>6</div>  
+									</div>
+
+
+									</body>
+									</html>
+
+					      </div>
+					    </li>
+					     <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content: center;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      		<div><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div ><div style="left: 144.194px; top: 142.222px; height: 17.7778px;">&nbsp;</div></div><div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>justify-content</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>50px</span><span> </span><span>50px</span><span> </span><span>50px</span><span>; </span><span>/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span class="cm-m-css cm-tag">div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>h1</span><span >&gt;</span><span>The justify-content Property</span><span >&lt;/</span><span>h1</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>Use the </span><span >&lt;</span><span>em</span><span >&gt;</span><span>justify-content</span><span >&lt;/</span><span>em</span><span >&gt;</span><span> property to align the grid inside the container.</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>The value "center" will align the grid in the middle of the container:</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>1</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>2</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>3</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>4</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>5</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>6</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div>
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      			<!DOCTYPE html>
+											<html>
+											<head>
+											<style>
+											.grid-container1f{
+											  display: grid;
+											  justify-content: center;
+											  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+											  grid-gap: 10px;
+											  background-color: #2196F3;
+											  padding: 10px;
+											}
+
+											.grid-container1f > div {
+											  background-color: rgba(255, 255, 255, 0.8);
+											  text-align: center;
+											  padding: 20px 0;
+											  font-size: 30px;
+											}
+											</style>
+											</head>
+											<body>
+
+											<h5>The justify-content Property</h5>
+
+											<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+											<p>The value "center" will align the grid in the middle of the container:</p><br>
+
+											<div class="grid-container1f">
+											  <div>1</div>
+											  <div>2</div>
+											  <div>3</div>  
+											  <div>4</div>
+											  <div>5</div>
+											  <div>6</div>  
+											</div>
+
+
+											</body>
+											</html>
+
+					      </div>
+					    </li>
+					     <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content: start;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      			<div><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div style="visibility: hidden;"><div style="left: 12.25px; top: 195.556px; height: 17.7778px;">&nbsp;</div></div><div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>justify-content</span><span>: </span><span>start</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>50px</span><span> </span><span>50px</span><span> </span><span>50px</span><span>; </span><span>/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span class="cm-m-css cm-tag">div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>h1</span><span >&gt;</span><span>The justify-content Property</span><span >&lt;/</span><span>h1</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>Use the </span><span >&lt;</span><span>em</span><span >&gt;</span><span>justify-content</span><span >&lt;/</span><span>em</span><span >&gt;</span><span> property to align the grid inside the container.</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>The value "start" will align the grid at the beginning of the container:</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>1</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>2</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>3</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>4</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>5</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>6</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div>	
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      		<!DOCTYPE html>
+										<html>
+										<head>
+										<style>
+										.grid-container1g {
+										  display: grid;
+										  justify-content: start;
+										  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+										  grid-gap: 10px;
+										  background-color: #2196F3;
+										  padding: 10px;
+										}
+
+										.grid-container1g > div {
+										  background-color: rgba(255, 255, 255, 0.8);
+										  text-align: center;
+										  padding: 20px 0;
+										  font-size: 30px;
+										}
+										</style>
+										</head>
+										<body>
+
+										<h5>The justify-content Property</h5>
+
+										<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+										<p>The value "start" will align the grid at the beginning of the container:</p><br>
+
+										<div class="grid-container1g">
+										  <div>1</div>
+										  <div>2</div>
+										  <div>3</div>  
+										  <div>4</div>
+										  <div>5</div>
+										  <div>6</div>  
+										</div>
+
+
+										</body>
+										</html>
+
+					      </div>
+					    </li>
+
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">code</i>Example : justify-content: end;</div>
+					      <div class="collapsible-body" style="background-color:#f1f1f1;">
+					      		<div><div style="position: relative; outline: none;"><div></div><div></div><div style="position: relative; z-index: 1;"></div><div ><div style="left: 12.25px; top: 195.556px; height: 17.7778px;">&nbsp;</div></div><div><pre><span style="padding-right: 0.1px;"><span>&lt;!DOCTYPE html&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>display</span><span>: </span><span>grid</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>justify-content</span><span>: </span><span>end</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-template-columns</span><span>: </span><span>50px</span><span> </span><span>50px</span><span> </span><span>50px</span><span>; </span><span>/*Make the grid smaller than the container*/</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>grid-gap</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>#2196F3</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>10px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span>.grid-container</span><span> &gt; </span><span class="cm-m-css cm-tag">div</span><span> {</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>background-color</span><span>: </span><span>rgba</span><span>(</span><span>255</span><span>, </span><span>255</span><span>, </span><span>255</span><span>, </span><span>0.8</span><span>);</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>text-align</span><span>: </span><span>center</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>padding</span><span>: </span><span>20px</span><span> </span><span>0</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span>font-size</span><span>: </span><span>30px</span><span>;</span></span></pre><pre><span style="padding-right: 0.1px;"><span>}</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>style</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>head</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>h1</span><span >&gt;</span><span>The justify-content Property</span><span >&lt;/</span><span>h1</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>Use the </span><span >&lt;</span><span>em</span><span >&gt;</span><span>justify-content</span><span >&lt;/</span><span>em</span><span >&gt;</span><span> property to align the grid inside the container.</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>p</span><span >&gt;</span><span>The value "end" will align the grid at the end of the container:</span><span >&lt;/</span><span>p</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;</span><span>div</span><span> </span><span>class</span><span>=</span><span>"grid-container"</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>1</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>2</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>3</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>4</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>5</span><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span> &nbsp;</span><span >&lt;</span><span>div</span><span >&gt;</span><span>6</span><span >&lt;/</span><span>div</span><span >&gt;</span><span> &nbsp;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>div</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>body</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span >&lt;/</span><span>html</span><span >&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div>
+					      </div>
+					    </li>
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output <i class="fa fa-angle-right"></i></div>
+					      <div class="collapsible-body">
+					      		<!DOCTYPE html>
+									<html>
+									<head>
+									<style>
+									.grid-container1h {
+									  display: grid;
+									  justify-content: end;
+									  grid-template-columns: 50px 50px 50px; /*Make the grid smaller than the container*/
+									  grid-gap: 10px;
+									  background-color: #2196F3;
+									  padding: 10px;
+									}
+
+									.grid-container1h > div {
+									  background-color: rgba(255, 255, 255, 0.8);
+									  text-align: center;
+									  padding: 20px 0;
+									  font-size: 30px;
+									}
+									</style>
+									</head>
+									<body>
+
+									<h5>The justify-content Property</h5>
+
+									<p>Use the <em>justify-content</em> property to align the grid inside the container.</p>
+
+									<p>The value "end" will align the grid at the end of the container:</p>
+
+									<div class="grid-container1h">
+									  <div>1</div>
+									  <div>2</div>
+									  <div>3</div>  
+									  <div>4</div>
+									  <div>5</div>
+									  <div>6</div>  
+									</div>
+
+
+									</body>
+									</html>
+
+					      </div>
+					    </li>
+
+			</ul>
 	       </div>
 
 	     </div>
@@ -1183,6 +1520,7 @@
 	    
 	    <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only" >
 	    	<div class="sticky">
+	    		<h5>Grid system</h5>
 		      <ul class="section table-of-contents">
 		        <li><a href="#introduction">Introduction</a></li>
 		        <li><a href="#structure">CSS Grid Intro</a></li>
@@ -1196,28 +1534,356 @@
 
 	  </div>
 </div>
-</div>
+
+
+
+
 
 
 
 
 <div class="collapse multi-collapse" id="formcollapse">
 	<section>
-      <h2 class="center">Components</h2>
+      <h5 class="center">Bootstrap - Grid system</h5>
      	 <div class="row">
        		 <div class="col-sm-4 offset-4"><hr style="height:2px;border-width:0;color:gray;background-color:gray;"></div>
      	 </div>
 	</section>
-<div class="container">
- <div class="row">
-	 <div class="col">	
-		  <div class="collection">
-		    <a href="#!" class="collection-item"><span class="new badge">4</span>Colors</a>
-		 
+	<hr>
+		<div class="row">
+			<!-- access recently files heder -->
+		 	 <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only">
+		 	 	<div class="sticky">
+		 	 		<h1 style="font-size: 20px;">Prakash Solanki</h1>
+			       <ul class="collapsible" style="margin-left:-18px;">
+					    <li>
+					      <div class="collapsible-header"><i class="material-icons">home</i>Home</div>
+					    </li>
+					    <li class="onclick0">
+					      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow0" aria-hidden="true"></i></i>CSS</div>
+					      <div class="collapsible-body">
+					            <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Color</div>
+					            </li>
+					             <a href="mycss/grid.html" class="text_d"> <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Grid</div>
+					            </li></a>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Shadow</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Table</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					    <li class="onclick1">
+					      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow1" aria-hidden="true"></i></i>Components</div>
+					      <div class="collapsible-body">
+					          <ul >
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Buttons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Breadcrumbs</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Cards</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collections</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Footer</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Icons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Navbar</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Preloader</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					     <li class="onclick2">
+					       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow2" aria-hidden="true"></i></i>Forms</div>
+					       <div class="collapsible-body">
+					          <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Autocomplete</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Checkboxes</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Chips</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Radio Buttons</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Range</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Select</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Switches</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Text Inputs</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					     <li class="onclick">
+					       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow" aria-hidden="true"></i></i>Java Script</div>
+					      <div class="collapsible-body">
+					          <ul>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Carousel</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collapsible</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Dropdown</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Modals</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tabs</div>
+					            </li>
+					            <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Toasts</div>
+					            </li>
+					             <li>
+					              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tooltips</div>
+					            </li>
+					          </ul> 
+					      </div>
+					    </li>
+					  </ul>
+			  </div>
 		  </div>
-	</div>
+		  <div class="col-12 col-sm-12 col-md-2 col-md-8 col-lg-8 col-xl-8" style="padding-left:10px;">
+				 <div id="introduction" class="section scrollspy">
+				       	<h5>Bootstrap Grid System</h5>
+				       	<p>Bootstrap's grid system allows up to 12 columns across the page.</p>
+				       	<p>If you do not want to use all 12 column individually, you can group the columns together to create wider columns:</p>
+				       	<img src="../images/css/b-grid.png" class="d-block d-sm-block d-md-none d-lg-none responsive-img">
+				       <div class="d-none d-sm-none d-md-block d-lg-block">
+				       	<div class="row">
+				       		<div class="col-1 center-align b-grid">1</div>
+				       		<div class="col-1 center-align b-grid">2</div>
+				       		<div class="col-1 center-align b-grid">3</div>
+				       		<div class="col-1 center-align b-grid">4</div>
+				       		<div class="col-1 center-align b-grid">5</div>
+				       		<div class="col-1 center-align b-grid">6</div>
+				       		<div class="col-1 center-align b-grid">7</div>
+				       		<div class="col-1 center-align b-grid">8</div>
+				       		<div class="col-1 center-align b-grid">9</div>
+				       		<div class="col-1 center-align b-grid">10</div>
+				       		<div class="col-1 center-align b-grid">11</div>
+				       		<div class="col-1 center-align b-grid">12</div>
+				      
+							<div class="col-2 center-align b-grid">span 2</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+				     
+							<div class="col-3 center-align b-grid">span 3</div>
+							<div class="col-3 center-align b-grid">span 3</div>
+							<div class="col-3 center-align b-grid">span 3</div>
+							<div class="col-3 center-align b-grid">span 3</div>
+
+							<div class="col-4 center-align b-grid">span 4</div>
+							<div class="col-4 center-align b-grid">span 4</div>
+							<div class="col-4 center-align b-grid">span 4</div>
+							
+							<div class="col-5 center-align b-grid">span 5</div>
+							<div class="col-5 center-align b-grid">span 5</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+
+							<div class="col-6 center-align b-grid">span 6</div>
+							<div class="col-6 center-align b-grid">span 6</div>
+
+							<div class="col-7 center-align b-grid">span 7</div>
+							<div class="col-5 center-align b-grid">span 5</div>
+
+							<div class="col-8 center-align b-grid">span 8</div>
+							<div class="col-4 center-align b-grid">span 4</div>
+
+							<div class="col-9 center-align b-grid">span 9</div>
+							<div class="col-3 center-align b-grid">span 3</div>
+
+							<div class="col-10 center-align b-grid">span 10</div>
+							<div class="col-2 center-align b-grid">span 2</div>
+
+							<div class="col-11 center-align b-grid">span 11</div>
+							<div class="col-1 center-align b-grid"> 1</div>
+
+							<div class="col-12 center-align b-grid">span 12</div>
+				
+				       	</div>
+				       	<p>Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on top of each other.</p>
+
+				       	 <div class="alert alert-warning" role="alert">
+					  <span class="black-text">Note&nbsp;&nbsp;:&nbsp;&nbsp;</span> If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row to put the items in.
+					</div>
+					<h5>Grid Classes</h5>
+					<p>The Bootstrap grid system has four classes:</p>
+
+					<p><i class="fa fa-angle-right"></i> &nbsp;&nbsp;&nbsp;<span class="red-text">xs</span> &nbsp;&nbsp;&nbsp;(for phones - screens less than 768px wide)</p>
+					<p><i class="fa fa-angle-right"></i> &nbsp;&nbsp;&nbsp;<span class="red-text">sm</span> &nbsp;&nbsp;&nbsp;(for tablets - screens equal to or greater than 768px wide)</p>
+					<p><i class="fa fa-angle-right"></i> &nbsp;&nbsp;&nbsp;<span class="red-text">md</span> &nbsp;&nbsp;&nbsp;(for small laptops - screens equal to or greater than 992px wide)</p>
+					<p><i class="fa fa-angle-right"></i> &nbsp;&nbsp;&nbsp;<span class="red-text">lg</span> &nbsp;&nbsp;&nbsp;(for laptops and desktops - screens equal to or greater than 1200px wide)</p>
+					<p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+
+					<p>Tip: Each class scales up, so if you wish to set the same widths for xs and sm, you only need to specify xs. </p>
+
+					<h3>Grid System Rules</h3>
+					<ol style="list-style:disc;">
+						<li>Rows must be placed within a <span class="red-text">.container</span> (fixed-width) or<span class="red-text"> .container-fluid</span> (full-width) for proper alignment and padding</li>
+						<li>Use rows to create horizontal groups of columns</li>
+						<li>Content should be placed within columns, and only columns may be immediate children of rows</li>
+						<li>Predefined classes like <span class="red-text">.row</span> and<span class="red-text"> .col-sm-4</span> are available for quickly making grid layouts</li>
+						<li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on<span class="red-text"> .rows</span></li>
+						<li>Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three<span class="red-text"> .col-sm-4</span></li>
+						<li>Column widths are in percentage, so they are always fluid and sized relative to their parent element</li>
+					</ol><br>
+					<h5>Basic Structure of a Bootstrap Grid</h5>
+				       
+				       	<img src="../images/css/b-grid2.png" style="height:auto;border:15px solid #f1f1f1;" class="responsive-img"/>
+
+
+				      </div>
+				      </div>
+
+				      <div id="structure" class="section scrollspy">
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				      </div>
+
+				      <div id="initialization" class="section scrollspy">
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				        <p>Content </p>
+				      </div>
+			</div>
+			
+			 <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only">	
+			 		<div class="sticky">
+					<div class="col hide-on-small-only m3 l2">
+				      <ul class="section table-of-contents">
+				        <li><a href="#introduction">Bootstrap Grid</a></li>
+				        <li><a href="#structure">Structure</a></li>
+				        <li><a href="#initialization">Intialization</a></li>
+				      </ul>
+				    </div>	
+				    </div>			
+			 </div>
+
 </div>
+			
 </div>
+
 </div>
 
 
