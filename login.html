@@ -1,30 +1,73 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
+  <head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
- 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
-    <link rel="icon" href="images/logo/title.png" type="image/icon type">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-	  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
-	<style type="text/css">
-		
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+  			section
+		{
+			 width:90%;
+			 margin: auto;
+			 margin-top:0px;
+		}
+		*::-webkit-scrollbar {
+		    display: none;
+		    }
+		.sticky {
+				  position:-webkit-sticky;
+				  position: sticky;
+				  top:60px;
+				  padding-top:40px;
+				}
+				.stickyy {
+				  position:-webkit-sticky;
+				  position: sticky;
+				  top:-450px;
+				  padding-top:40px;
+				}
+		
+		.mysticky
+				{
+					   position: sticky;
+				  	  top:0px;
+				  	  padding-top:0px;
+				  	 z-index:12;
+				}
+		.responsee
+		{
+			  border:1px solid;
+			  padding: 20px; 
+			  width:100%;
+			  resize:horizontal;
+			  overflow:auto;
+		}	
+		.b-grid
+		{
+			background-color:#f1f1f1;
+			 border-bottom:5px solid #fff;
+			  padding:10px 20px;
+			   border-right:5px solid #fff;
+		}
 		.nav-list li a{
 			text-decoration:none;
 			color:#f1f1f1;
@@ -52,9 +95,20 @@
       text-decoration:none;
       color:#000;
     }
-	</style>
- </head>
- <body>
+		table 
+		{
+			border:5px solid #f1f1f1;
+		}
+		table tr:nth-child(even)
+		{
+			background-color:#f1f1f1;
+		}
+  </style>
+
+  </head>
+		<body style="background-color: #f1f1f1;">
+
+
 
 
    <nav>
@@ -104,9 +158,9 @@
     <li><div class="divider"></div></li>
 
   <ul class="collapsible">
-    <li>
+    <a href="../index.html" style="text-decoration: none;"><li>
       <div class="collapsible-header"><i class="material-icons">home</i>Home</div>
-    </li>
+    </li></a>
     <li class="onclick0">
       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow0" aria-hidden="true"></i></i>CSS</div>
       <div class="collapsible-body">
@@ -114,7 +168,7 @@
             <li>
               <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Color</div>
             </li>
-             <a href="mycss/grid.html" class="text_d"> <li>
+             <a href="grid.html" class="text_d"> <li>
               <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Grid</div>
             </li></a>
             <li>
@@ -222,88 +276,88 @@
           </ul> 
       </div>
     </li>
-     <li class="onclickbooks">
+    <li class="onclickbooks">
                  <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrowbook" aria-hidden="true"></i></i><span class="red-text">Ethical hacking</span></div>
                 <div class="collapsible-body">
                     <ul>
-                      <a href="login.html"><li>
-                        <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Books</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons green-text" style="font-size:18px;">lock_open</i>Books</div>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Introducation</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Setup Hacking Environment</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                       <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Ip Address Basics</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>How To Be Anonymous</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Using Tor & Vpn In Window</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Using Vpn In kali linux</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Information Gethering</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"><li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Steganography</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                       <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Track Ip</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                       <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Dos Attack</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                       <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Bruteforce Attack</div>
                       </li>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>John The Ripper</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Keyloggers</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Software Keylogger</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Send Spoofed Emails(2)</div>
-                      </li></a>
-                     <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Window Hacking</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Stickey Key Attack</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;"> <li>
+                      </li>
+                      <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Android Hacking</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;">   <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Port Forwarding</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;">   <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Hake Wordpress Site</div>
-                      </li></a>
-                      <a href="login.html" style="text-decoration: none;">   <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Social Engineering</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Phishing Practical</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>SQL Injection</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Wifi Hacking</div>
-                      </li></a>
-                       <a href="login.html" style="text-decoration: none;">  <li>
+                      </li>
+                        <li>
                         <div class="collapsible-header"><i class="material-icons red-text" style="font-size:18px;">lock</i>Social Engineering</div>
-                      </li></a>
+                      </li>
                      
                     </ul> 
                 </div>
@@ -315,14 +369,12 @@
         <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons">notifications_active</i></a>
         <a href="#" id="conmode" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">view_module</i></a>
         <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">help_outline</i></a>
-     <li><div class="divider"></div></li>
+        <li><div class="divider"></div></li>
 
      </ul>
   </ul>
- 
 
-
- <div class="fixed-action-btn">
+<div class="fixed-action-btn">
   <a class="btn-floating btn-large red">
     <i class="large material-icons">mode_edit</i>
   </a>
@@ -333,75 +385,76 @@
  <li><a href="mailto:jay.ma.bharthi@gmail.com" class="btn-floating dark darken-1"><i class="fa fa-envelope-o"></i></a></li>
   </ul>
 </div>
-<br>
 
-<h5 style="color: #ee6e73;text-transform:uppercase;" class="center-align">Prakash Solanki</h5>
-<h5 class="center-align" style="padding:10px;">A modern responsive front-end framework</h5>
 <br>
 <br>
 <br>
 
-<div style="justify-content: center;align-items: center;display: flex;">
-<a href="" data-target="slide-out" class="sidenav-trigger btn red ">Get Started</a>
-</div><br>
-<div style="justify-content: center;align-items: center;display: flex;">
-<a href="mycss/icons.html" class="btn red " style="padding:0 40px 0 40px; margin-right:20px;">Icons</a>
-<a href="mycss/grid.html" class="btn red ">HTML & CSS</a>
-</div><br>
-<div style="justify-content: center;align-items: center;display: flex;">
-<a href="animate.html" class="btn red ">Animation</a>
-</div><br>
+<div>
+      <div class="container-fluid shadow" style="padding:40px 10px; background-color: #fff;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-md-4">
+            </div>
+          <div class="col-12 col-sm-12 col-md-4 col-md-4">
+          <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/hake.jpg" class="responsive-img">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Login Now<i class="material-icons right">more_vert</i></span>
+                  <p style="padding-top:10px;"><ul>
+                      <a href="https://www.instagram.com/prakash_solanki2809/" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons"><i class="fa fa-instagram"></i></i></a>
+                      <a href="https://wa.me/919571053615?text=Hi" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons"><i class="fa fa-whatsapp"></i></i></a>
+                      <a href="mailto:jay.ma.bharthi@gmail.com" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons"><i class="fa fa-facebook"></i></i></a>
 
+                  </ul></p>
+                </div>
+                <div class="card-reveal" style="overflow:auto; ">
+                  <span class="card-title grey-text text-darken-4">Login here<i class="material-icons right">close</i></span>
+                   <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate">
+                          <label for="email">User Id</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate">
+                          <label for="password">Password</label>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <div class="input-field col s12">
+                         <button type="Reset"  class="btn red">Reset</button>
 
-<div style="justify-content: center;align-items: center;display: flex;">
-<a data-target="slide-out" class="sidenav-trigger btn red " style="padding:0 100px;">Ethical hacking</a>
+                         <a href="#" class="btn">Login</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                      </div>
+          </div>
+        </div>
+          <div class="col-12 col-sm-12 col-md-4 col-md-4">
+          </div>
+
+</div>
 </div>
 
 
-<br>
-<br>
-<br>
-
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Prakash Solanki</h5>
-                <p class="grey-text text-lighten-4">A modern responsive front-end framework.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="mycss/icon.html">Icons</a></li>
-                  <li><a class="grey-text text-lighten-3" href="mycss/grid.html">Grid System</a></li>
-                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2021 Copyright Prakash Solanki, All rights reserved.
- 
-            <a class="grey-text text-lighten-4 right" href="#!">Prakash Solanki</a>
-            </div>
-          </div>
-        </footer>
 
 
  <script type="text/javascript">
-
- 	 $(document).ready(function(){
-
-     $('.fixed-action-btn').floatingActionButton({
-            
-          });
-
+   $(document).ready(function(){
      $('.sidenav').sidenav();
      $('.dropdown-trigger').dropdown();
      $('.slider').slider();
      $('.collapsible').collapsible();
+      $('.fixed-action-btn').floatingActionButton({
+            
+          });
 
      $('.onclick').click(function(){
          $('.arrow').toggleClass('fa-angle-right',1000);
@@ -425,8 +478,7 @@
          $('.arrowbook').toggleClass('fa-angle-down',1000);
      });
   });
- </script>   
- </body>
- </html>
+ </script>
 
-
+</body>
+</html>

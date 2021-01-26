@@ -1,0 +1,82 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+
+<title>Animated Heart</title>
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+body
+
+{
+margin:0;
+
+padding:0;
+
+display:flex;
+
+justify-content:center;
+
+align-items: center;
+
+min-height:100vh;
+
+background: #000;
+
+}
+.logo
+
+{
+position:relative;
+
+color: #fff;
+
+font-size:7em;
+
+text-shadow: 0 0 50px red,
+0 0 100px red,
+0 0 150px red,
+0 0 200px red,
+0 0 250px #0f0,
+0 0 300px #0f0;
+
+animation: animate 5s linear infinite;
+
+animation: animatee 1s linear infinite;
+
+}
+@keyframes animate
+
+{
+0%{ filter: hue-rotate(0deg);}
+
+100%{ filter: hue-rotate(360deg);}
+
+}
+@keyframes animatee
+
+{
+0%{ font-size:7em;}
+
+50%{ font-size:6em;}
+
+100%{ font-size:7em;}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<i class="fa fa-heartbeat logo" aria-hidden="true"></i>
+
+</div>
+</body>
+
+</html>
