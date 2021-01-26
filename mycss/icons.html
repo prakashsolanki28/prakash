@@ -36,7 +36,7 @@
 		.sticky {
 				  position:-webkit-sticky;
 				  position: sticky;
-				  top:00px;
+				  top:60px;
 				  padding-top:40px;
 				}
 				.stickyy {
@@ -45,12 +45,18 @@
 				  top:-450px;
 				  padding-top:40px;
 				}
+		.navsticky{
+					  position: sticky;
+				  	  top:0px;
+				  	  padding-top:0px;
+				  	  z-index: 999;
+		}
 		.mysticky
 				{
 					  position: sticky;
-				  	  top: 0;
-				  	  padding-top:0px;
-				  	 z-index: 999;
+				  	  top:55px;
+				  	  padding-top:2px;
+				  	 z-index:12;
 				}
 		.responsee
 		{
@@ -67,7 +73,33 @@
 			  padding:10px 20px;
 			   border-right:5px solid #fff;
 		}
-		
+		.nav-list li a{
+			text-decoration:none;
+			color:#f1f1f1;
+		}
+		.nav-list li a:hover{
+			text-decoration:none;
+			color:#fff;
+		}
+     *::-webkit-scrollbar {
+    display: none;
+    }
+		section
+		{
+			 width:90%;
+			 margin: auto;
+			 margin-top:90px;
+		}
+    .text_d
+    {
+      text-decoration:none;
+      color:#000;
+    }
+    .text_d:hover
+    {
+      text-decoration:none;
+      color:#000;
+    }
 		table 
 		{
 			border:5px solid #f1f1f1;
@@ -80,6 +112,188 @@
 
   </head>
 		<body style="background-color: #f1f1f1;">
+
+
+<div class="navsticky">
+
+
+   <nav>
+    <div class="nav-wrapper blue darken-1">
+     
+      
+     <a href="#!" class="brand-logo center-align" style="text-decoration:none; margin-left:10px; text-shadow: 2px 2px red; font-family: 'Josefin Slab', serif;">
+  			Ps</a>
+
+      <a href="#" data-target="slide-out" class="sidenav-trigger center-align"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down nav-list" style="margin-left:300px;">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="codes\css.html">Codes</a></li>
+        <li><a href="mobile.html">Contact now</a></li>
+      </ul>
+
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+ <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://picsum.photos/500/500">
+      </div>
+      <a href="#user"><img class="circle" src="images/ab.png"></a>
+      <a href="#name"><span class="white-text name">Prakash Solanki</span></a>
+      <a href="#email"><span class="white-text email">Jay.ma.bharthi@gmail.com</span></a>
+    </div></li>
+      <li class="right"><div class="switch left nightmode">
+                    <label>
+                      <input class="nightmode" type="checkbox">
+                      <span class="lever"></span>
+                    </label>
+                  </div>
+  </li>
+ 
+    <li><a class="subheader color" href="#!">Dark theme</a></li>
+    <li><div class="divider"></div></li>
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">home</i>Home</div>
+    </li>
+    <li class="onclick0">
+      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow0" aria-hidden="true"></i></i>CSS</div>
+      <div class="collapsible-body">
+            <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Color</div>
+            </li>
+             <a href="mycss/grid.html" class="text_d"> <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Grid</div>
+            </li></a>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Shadow</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Table</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+    <li class="onclick1">
+      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow1" aria-hidden="true"></i></i>Components</div>
+      <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Buttons</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Breadcrumbs</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Cards</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collections</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Footer</div>
+            </li>
+            <a href="mycss/icons.html"><li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Icons</div>
+            </li></a>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Navbar</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Preloader</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+     <li class="onclick2">
+       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow2" aria-hidden="true"></i></i>Forms</div>
+       <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Autocomplete</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Checkboxes</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Chips</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Radio Buttons</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Range</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Select</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Switches</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Text Inputs</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+     <li class="onclick">
+       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow" aria-hidden="true"></i></i>Java Script</div>
+      <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Carousel</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collapsible</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Dropdown</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Modals</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tabs</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Toasts</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tooltips</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+  </ul>
+        
+    <li>
+     <ul style="padding:10px 40px;">
+        <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons">notifications_active</i></a>
+        <a href="#" id="conmode" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">view_module</i></a>
+        <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">help_outline</i></a>
+     <li><div class="divider"></div></li>
+
+     </ul>
+  </ul>
+ </div>
 
 
 <div class="fixed-action-btn">
@@ -13046,7 +13260,31 @@ $(document).ready(function(){
 
       			
 
-      		$('.w3-btn').hide();		
+      		$('.w3-btn').hide();	
+      		$(document).ready(function(){
+     $('.sidenav').sidenav();
+     $('.dropdown-trigger').dropdown();
+     $('.slider').slider();
+     $('.collapsible').collapsible();
+
+     $('.onclick').click(function(){
+         $('.arrow').toggleClass('fa-angle-right',1000);
+         $('.arrow').toggleClass('fa-angle-down',1000);
+     });
+
+     $('.onclick1').click(function(){
+         $('.arrow1').toggleClass('fa-angle-right',1000);
+         $('.arrow1').toggleClass('fa-angle-down',1000);
+     });
+      $('.onclick0').click(function(){
+         $('.arrow0').toggleClass('fa-angle-right',1000);
+         $('.arrow0').toggleClass('fa-angle-down',1000);
+     });
+       $('.onclick2').click(function(){
+         $('.arrow2').toggleClass('fa-angle-right',1000);
+         $('.arrow2').toggleClass('fa-angle-down',1000);
+     });
+  });	
 
 });
 			      
