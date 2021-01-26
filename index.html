@@ -251,11 +251,16 @@
 </div>
 
  <script type="text/javascript">
+	  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+      
  	 $(document).ready(function(){
      $('.sidenav').sidenav();
      $('.dropdown-trigger').dropdown();
      $('.slider').slider();
      $('.collapsible').collapsible();
+		 
 
      $('.onclick').click(function(){
          $('.arrow').toggleClass('fa-angle-right',1000);
