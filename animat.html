@@ -1,0 +1,694 @@
+<html ng-app="myApp">
+  <head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <style type="text/css">
+        section
+    {
+       width:90%;
+       margin: auto;
+       margin-top:0px;
+    }
+    *::-webkit-scrollbar {
+        display: none;
+        }
+    .sticky {
+          position:-webkit-sticky;
+          position: sticky;
+          top: 60px;
+          padding-top:40px;
+        }
+    
+    .responsee
+    {
+        border:1px solid;
+        padding: 20px; 
+        width:100%;
+        resize:horizontal;
+        overflow:auto;
+    } 
+    .b-grid
+    {
+      background-color:#f1f1f1;
+       border-bottom:5px solid #fff;
+        padding:10px 20px;
+         border-right:5px solid #fff;
+    }
+    
+    table 
+    {
+      border:5px solid #f1f1f1;
+    }
+    table tr:nth-child(even)
+    {
+      background-color:#f1f1f1;
+    }
+    .icon1
+    {
+          margin:0;
+         padding:0;
+         display:flex;
+         justify-content:center;
+         align-items: center;
+         margin-bottom:20px;
+         min-height:35vh;
+         background:radial-gradient(#ff0000,#5a0000);
+    }
+    .icon2
+    {
+      background:#FF6235;
+      margin-bottom:20px;
+      height:35vh;
+      overflow:hidden;
+      border: none;
+      font: normal 1px/normal Arial, Helvetica, sans-serif;
+      color: rgba(255,255,255,1);
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      color:#fff;
+      text-align:Center;
+
+    }
+    .icon3
+    {
+           justify-content: center;
+            align-items: center;
+            display: flex;
+            height:35vh;
+            background:#f1f1f1;
+    }
+     svg{
+          width:200px;
+          height:200px;
+          margin: 10px;
+        }
+     .heart{
+        position:relative;
+        width:100px;
+        height:100px;
+        background:#e80202;
+        transform:rotate(45deg);
+         box-shadow:30px 30px 200px rgba(0,0,0,.5);
+         animation: aniamte 1s linear infinite;
+      }
+      @keyframes aniamte
+      {
+        0%{
+          transform:rotate(45deg) scale(1);
+        }20%{
+          transform:rotate(45deg) scale(.8);
+        }40%{
+          transform:rotate(45deg) scale(1.2);
+        }60%{
+          transform:rotate(45deg) scale(1);
+        }80%{
+          transform:rotate(45deg) scale(1.3);
+        }100%{
+          transform:rotate(45deg) scale(1);
+        }
+      }
+      .heart:before
+      {
+         content:'';
+         position: absolute;
+         top:-50px;
+         width:100px;
+         height:50px;
+         background:#e80202;
+         border-top-left-radius:100px;
+         border-top-right-radius:100px;
+      }
+      .heart:after
+      {
+         content:'';
+         position: absolute;
+         left:-50px;
+         width:50px;
+         height:100px;
+         background:#e80202;
+         border-top-left-radius:100px;
+         border-bottom-left-radius:100px;
+
+      }
+
+
+.India {
+  background-image: url("https://www.crossed-flag-pins.com/animated-flag-gif/gifs/India_240-animated-flag-gifs.gif");
+  
+    background-position:center;
+  background-size:150px 70px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size:50px;
+  font-weight: bold;
+ font-family: 'Lobster', cursive;
+  
+  font-weight: normal;
+
+  text-align: center;
+
+ 
+}
+.India2 {
+ 
+  
+  font-size:50px;
+  font-weight: bold;
+ font-family: 'Lobster', cursive;
+  font-weight: normal;
+  text-align: center;
+ 
+}
+p{    font-family: monospace, monospace;}
+  </style>
+
+</head>
+<body style="background-color: #f1f1f1;">
+
+   <nav>
+    <div class="nav-wrapper blue darken-1">
+     
+      
+     <a href="#!" class="brand-logo center-align" style="text-decoration:none; margin-left:10px; text-shadow: 2px 2px red; font-family: 'Josefin Slab', serif;">
+        Prakash<span style="visibility: hidden;">_</span>Solanki</a>
+
+      <a href="#" data-target="slide-out" class="sidenav-trigger center-align"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down nav-list" style="margin-left:300px;">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="codes\css.html">Codes</a></li>
+        <li><a href="mobile.html">Contact now</a></li>
+      </ul>
+
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+ <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="https://picsum.photos/500/500">
+      </div>
+      <a href="#user"><img class="circle" src="images/ab.png"></a>
+      <a href="#name"><span class="white-text name">Prakash Solanki</span></a>
+      <a href="#email"><span class="white-text email">Jay.ma.bharthi@gmail.com</span></a>
+    </div></li>
+      <li class="right"><div class="switch left nightmode">
+                    <label>
+                      <input class="nightmode" type="checkbox">
+                      <span class="lever"></span>
+                    </label>
+                  </div>
+  </li>
+ 
+    <li><a class="subheader color" href="#!">Dark theme</a></li>
+    <li><div class="divider"></div></li>
+
+  <ul class="collapsible">
+     <a href="../index.html" style="text-decoration: none;"><li>
+      <div class="collapsible-header"><i class="material-icons">home</i>Home</div>
+    </li></a>
+    <li class="onclick0">
+      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow0" aria-hidden="true"></i></i>CSS</div>
+      <div class="collapsible-body">
+            <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Color</div>
+            </li>
+             <a href="mycss/grid.html" class="text_d"> <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Grid</div>
+            </li></a>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Shadow</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Table</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+    <li class="onclick1">
+      <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow1" aria-hidden="true"></i></i>Components</div>
+      <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Buttons</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Breadcrumbs</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Cards</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collections</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Footer</div>
+            </li>
+            <a href="icons.html"><li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Icons</div>
+            </li></a>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Navbar</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Preloader</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+     <li class="onclick2">
+       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow2" aria-hidden="true"></i></i>Forms</div>
+       <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Autocomplete</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Checkboxes</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Chips</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Radio Buttons</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Range</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Select</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Switches</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Text Inputs</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+     <li class="onclick">
+       <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right arrow" aria-hidden="true"></i></i>Java Script</div>
+      <div class="collapsible-body">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Carousel</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Collapsible</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Dropdown</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Media</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Modals</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tabs</div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Toasts</div>
+            </li>
+             <li>
+              <div class="collapsible-header"><i class="material-icons"><i class="fa fa-angle-right" style="visibility: hidden;"></i></i>Tooltips</div>
+            </li>
+          </ul> 
+      </div>
+    </li>
+  </ul>
+        
+    <li>
+     <ul style="padding:10px 40px;">
+        <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons">notifications_active</i></a>
+        <a href="#" id="conmode" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">view_module</i></a>
+        <a href="#" class="waves-effect color" style="padding:0 20px;"><i class="material-icons ">help_outline</i></a>
+     <li><div class="divider"></div></li>
+
+     </ul>
+  </ul>
+
+
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+   <ul>
+    <li><a href="https://www.facebook.com/profile.php?id=100050007763200" class="btn-floating blue"><i class="material-icons"><i class="fa fa-facebook"></i></i></a></li>
+ <li><a href="https://www.instagram.com/prakash_solanki2809/" class="btn-floating red darken-1"><i class="fa fa-instagram"></i></a></li>
+ <li><a href="https://wa.me/919571053615?text=Hi" class="btn-floating green darken-1"><i class="fa fa-whatsapp"></i></a></li>
+ <li><a href="mailto:jay.ma.bharthi@gmail.com" class="btn-floating dark darken-1"><i class="fa fa-envelope-o"></i></a></li>
+  </ul>
+</div>
+
+
+<div class=" shadow" style="padding:10px; background-color: #fff;">
+
+
+<div class="row">
+
+<div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only">
+      
+ </div>
+   <div class="col-xl-8 col-md-8 col-lg-8">
+        <h3>Css Animations</h3><br><br>
+        <div class="row">
+           <div class="col-12 col-sm-12 col-md-4 icon1">
+               <div class="heart"></div>
+           </div>
+           <div class="col-12 col-sm-12 col-md-4 icon2">
+             <div class="India">
+                INDIA 
+            </div>
+            <div class="India2">
+                26 january 2021
+            </div>
+           </div>
+           <div class="col-12 col-sm-12 col-md-4 icon3" >
+                
+              <svg version="1.1" id="flower" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="50" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="3s" ></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="74" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="6s"></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="71" cy="62" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="9s"></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="29" cy="62" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="12s" ></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="26" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="15s"></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="29" cy="38" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="18s" ></animate>
+                  </circle>
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="71" cy="38" r="24" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="21s" ></animate>
+                  </circle>
+
+                  <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="50" r="28" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="20s" ></animate>
+                  </circle>
+                   <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="50" r="32" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="20s" ></animate>
+                  </circle>
+                    <circle fill="none" stroke="#000" stroke-width="2" stroke-mitterlimit="0" cx="50" cy="50" r="48" stroke-dasharray="360" stroke-linecap="round" transform="rotate(-90 ) translate(-100 0)" >
+                      <animate attributeName="stroke-dashoffset" values="360;0" dur="20s" ></animate>
+                  </circle>
+                  
+              </svg>
+
+           </div>
+        </div>
+
+            
+
+
+
+               <div id="third1" class="section scrollspy">
+                  <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">code</i>Heart animation 1 &nbsp;&nbsp;&nbsp; <i class="material-icons red-text">favorite</i></div>
+    <div class="collapsible-body" style="background:#f1f1f1;">
+ &lt;!DOCTYPE html &gt;
+ 
+<p style="font-weight:600;">&lt;html></p>
+<p style="font-weight:600;">&lt;head></p>
+  <p style="font-weight:600;">&lt;title>Animated Heart&lt;/title></p>
+  <p style="font-weight:600;">&lt;style type="text/css"></p>
+    
+      <div style="text-align: left;">
+        <p style="font-weight:600;">body</p>
+        {
+         <p style="padding-left:20px;">margin:0;</p>
+         <p style="padding-left:20px;">padding:0;</p>
+         <p style="padding-left:20px;">display:flex;</p>
+         <p style="padding-left:20px;">justify-content:center;</p>
+         <p style="padding-left:20px;">align-items: center;</p>
+         <p style="padding-left:20px;">min-height:100vh;</p>
+         <p style="padding-left:20px;">background:radial-gradient(#ff0000,#5a0000);</p>
+         <p style="padding-left:20px;">box-shadow:30px 30px 200px rgba(0,0,0,.5);</p>
+       }
+      </div>
+      <div style="text-align: left;">
+      <p style="font-weight:600;">.heart</p>{
+        <p style="padding-left:20px;">position:relative;</p>
+        <p style="padding-left:20px;">width:200px;</p>
+        <p style="padding-left:20px;">height:200px;</p>
+        <p style="padding-left:20px;">background:#e80202;</p>
+        <p style="padding-left:20px;">transform:rotate(45deg);</p>
+         <p style="padding-left:20px;">box-shadow:30px 30px 200px rgba(0,0,0,.5);</p>
+         <p style="padding-left:20px;">animation: aniamte 1s linear infinite;</p>
+      }
+    </div>
+    <div>
+     <p style="font-weight:600;"> @keyframes aniamte</p>
+      {
+        <p style="padding-left:20px;">0%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}20%{
+          transform:rotate(45deg) scale(.8);</p>
+        <p style="padding-left:20px;">}40%{
+          transform:rotate(45deg) scale(1.2);</p>
+        <p style="padding-left:20px;">}60%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}80%{
+          transform:rotate(45deg) scale(1.3);</p>
+        <p style="padding-left:20px;">}100%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}</p>
+      }
+      </div>
+      <div>
+
+      <p style="font-weight:20px;">.heart:before</p>
+      {
+         <p style="padding-left:20px;">content:'';</p>
+         <p style="padding-left:20px;">position: absolute;</p>
+         <p style="padding-left:20px;">top:-100px;</p>
+         <p style="padding-left:20px;">width:200px;</p>
+         <p style="padding-left:20px;">height:100px;</p>
+         <p style="padding-left:20px;">background:#e80202;</p>
+         <p style="padding-left:20px;">border-top-left-radius:100px;</p>
+         <p style="padding-left:20px;">border-top-right-radius:100px;</p>
+      }
+      <p style="font-weight:20px;">.heart:after<p>
+      {
+         <p style="padding-left:20px;">content:'';</p>
+         <p style="padding-left:20px;">position: absolute;</p>
+         <p style="padding-left:20px;">left:-100px;</p>
+         <p style="padding-left:20px;">width:100px;</p>
+         <p style="padding-left:20px;">height:200px;</p>
+         <p style="padding-left:20px;">background:#e80202;</p>
+         <p style="padding-left:20px;">border-top-left-radius:100px;</p>
+         <p style="padding-left:20px;">border-bottom-left-radius:100px;</p>
+
+      }
+  <p style="font-weight:600;">&lt;/style></p>
+<p style="font-weight:600;">&lt;/head></p>
+<p style="font-weight:600;">&lt;body></p>
+      <p style="font-weight:600;">&lt;div class="heart">&lt;/div></p>
+<p style="font-weight:600;">&lt;/body></p>
+<p style="font-weight:600;">&lt;/html></p>
+
+
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output</div>
+                      <div class="collapsible-body">
+                        <div class="icon1">
+                           <div class="heart"></div>
+                        <div>
+                      </div>
+                    </li>
+                     <li>
+                      <div class="collapsible-header"><i class="material-icons">code</i>Heart animation 1 &nbsp;&nbsp;&nbsp; <i class="material-icons red-text">favorite</i></div>
+    <div class="collapsible-body" style="background:#f1f1f1;">
+ &lt;!DOCTYPE html &gt;
+ 
+<p style="font-weight:600;">&lt;html></p>
+<p style="font-weight:600;">&lt;head></p>
+  <p style="font-weight:600;">&lt;title>Animated Heart&lt;/title></p>
+  <p style="font-weight:600;">&lt;style type="text/css"></p>
+    
+      <div style="text-align: left;">
+        <p style="font-weight:600;">body</p>
+        {
+         <p style="padding-left:20px;">margin:0;</p>
+         <p style="padding-left:20px;">padding:0;</p>
+         <p style="padding-left:20px;">display:flex;</p>
+         <p style="padding-left:20px;">justify-content:center;</p>
+         <p style="padding-left:20px;">align-items: center;</p>
+         <p style="padding-left:20px;">min-height:100vh;</p>
+         <p style="padding-left:20px;">background:radial-gradient(#ff0000,#5a0000);</p>
+         <p style="padding-left:20px;">box-shadow:30px 30px 200px rgba(0,0,0,.5);</p>
+       }
+      </div>
+      <div style="text-align: left;">
+      <p style="font-weight:600;">.heart</p>{
+        <p style="padding-left:20px;">position:relative;</p>
+        <p style="padding-left:20px;">width:200px;</p>
+        <p style="padding-left:20px;">height:200px;</p>
+        <p style="padding-left:20px;">background:#e80202;</p>
+        <p style="padding-left:20px;">transform:rotate(45deg);</p>
+         <p style="padding-left:20px;">box-shadow:30px 30px 200px rgba(0,0,0,.5);</p>
+         <p style="padding-left:20px;">animation: aniamte 1s linear infinite;</p>
+      }
+    </div>
+    <div>
+     <p style="font-weight:600;"> @keyframes aniamte</p>
+      {
+        <p style="padding-left:20px;">0%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}20%{
+          transform:rotate(45deg) scale(.8);</p>
+        <p style="padding-left:20px;">}40%{
+          transform:rotate(45deg) scale(1.2);</p>
+        <p style="padding-left:20px;">}60%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}80%{
+          transform:rotate(45deg) scale(1.3);</p>
+        <p style="padding-left:20px;">}100%{
+          transform:rotate(45deg) scale(1);</p>
+        <p style="padding-left:20px;">}</p>
+      }
+      </div>
+      <div>
+
+      <p style="font-weight:20px;">.heart:before</p>
+      {
+         <p style="padding-left:20px;">content:'';</p>
+         <p style="padding-left:20px;">position: absolute;</p>
+         <p style="padding-left:20px;">top:-100px;</p>
+         <p style="padding-left:20px;">width:200px;</p>
+         <p style="padding-left:20px;">height:100px;</p>
+         <p style="padding-left:20px;">background:#e80202;</p>
+         <p style="padding-left:20px;">border-top-left-radius:100px;</p>
+         <p style="padding-left:20px;">border-top-right-radius:100px;</p>
+      }
+      <p style="font-weight:20px;">.heart:after<p>
+      {
+         <p style="padding-left:20px;">content:'';</p>
+         <p style="padding-left:20px;">position: absolute;</p>
+         <p style="padding-left:20px;">left:-100px;</p>
+         <p style="padding-left:20px;">width:100px;</p>
+         <p style="padding-left:20px;">height:200px;</p>
+         <p style="padding-left:20px;">background:#e80202;</p>
+         <p style="padding-left:20px;">border-top-left-radius:100px;</p>
+         <p style="padding-left:20px;">border-bottom-left-radius:100px;</p>
+
+      }
+  <p style="font-weight:600;">&lt;/style></p>
+<p style="font-weight:600;">&lt;/head></p>
+<p style="font-weight:600;">&lt;body></p>
+      <p style="font-weight:600;">&lt;div class="heart">&lt;/div></p>
+<p style="font-weight:600;">&lt;/body></p>
+<p style="font-weight:600;">&lt;/html></p>
+
+
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">play_arrow</i>Output</div>
+                      <div class="collapsible-body">
+                        <div class="icon1">
+                           <div class="heart"></div>
+                        <div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+
+                <div id="third2" class="section scrollspy">
+                  <p>Content </p>
+                </div>
+
+                <div id="third3" class="section scrollspy">
+                  <p>Content</p>
+            </div>
+   </div>
+   <div class="col-xl-2 col-md-2 col-lg-2 d-md-none d-xl-block d-lg-block hide-on-small-only" style="border-left:1px solid grey;">
+        <br>
+        <div class="sticky">
+                <ul class="section table-of-contents">
+                  <li><a href="#third1">Heart animation <i class="material-icons red-text">favorite</i></a></li>
+                  <li><a href="#third2">Structure</a></li>
+                  <li><a href="#third3
+                    ">Intialization</a></li>
+                </ul>
+   </div>
+ </div>
+</div>
+
+</div>
+
+
+
+
+
+
+ <script type="text/javascript">
+   $(document).ready(function(){
+     $('.sidenav').sidenav();
+     $('.dropdown-trigger').dropdown();
+     $('.slider').slider();
+     $('.collapsible').collapsible();
+     $('.scrollspy').scrollSpy();
+     $('.onclick').click(function(){
+         $('.arrow').toggleClass('fa-angle-right',1000);
+         $('.arrow').toggleClass('fa-angle-down',1000);
+     });
+
+     $('.onclick1').click(function(){
+         $('.arrow1').toggleClass('fa-angle-right',1000);
+         $('.arrow1').toggleClass('fa-angle-down',1000);
+     });
+      $('.onclick0').click(function(){
+         $('.arrow0').toggleClass('fa-angle-right',1000);
+         $('.arrow0').toggleClass('fa-angle-down',1000);
+     });
+       $('.onclick2').click(function(){
+         $('.arrow2').toggleClass('fa-angle-right',1000);
+         $('.arrow2').toggleClass('fa-angle-down',1000);
+     });
+  });
+ </script>   
+</body>
+</html>
