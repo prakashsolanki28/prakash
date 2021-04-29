@@ -1,0 +1,150 @@
+*{
+	padding:0;
+	margin:0;
+}
+body
+{
+		width:100%;
+		height:100vh;
+}
+a{text-decoration:none;color:#fff;}
+a:hover{text-decoration:none;color:#d9d7d7;}
+body::-webkit-scrollbar
+{
+		  		display:none;
+}
+ul{list-style:none;}
+.copy
+{
+	-webkit-user-select: none; 
+  	-ms-user-select: none; 
+  	user-select: none;
+}
+.main_body
+{
+	 background:#262626;	
+}
+.main_body .menu_bar
+{
+	 width:100%;
+	 height:40px;
+	 background:#262626;
+	 margin:0 -15px;
+}
+.main_body .menu_bar ul
+{
+	position:fixed;
+	display:inline-flex;
+	z-index:99;
+}
+.main_body .menu_bar ul li
+{
+	padding:10px 10px 15px 10px;
+	width:84px;
+	background:#262626;
+}
+.sidePannel
+{
+	position: absolute;
+	left:0;
+	top:0;
+	width:256px;
+	height:100vh;
+	padding-top:45px;
+	background:#262626;
+	transition:0.3s;
+	z-index:98;
+	overflow-x:auto;
+}
+.sidePannel::-webkit-scrollbar
+{
+	width:4px;
+	color:#f1f1f1;
+}
+.sidePannel::-webkit-scrollbar-thumb
+{
+	background:grey;
+}
+.sidePannel ul li
+{
+	width:100%;
+	padding:8px 10px;
+	color:#fff;
+	box-sizing:border-box;
+}
+.sidePannel ul li i
+{
+	margin-right:10px;
+}
+.sidePannel ul li:nth-child(1):hover,.sidePannel ul li:nth-child(7):hover
+{
+	background:transparent;
+	color:#fff;
+	cursor:default;
+}
+.sidePannel ul li:hover
+{
+	background:rgba(255,255,255,0.3);
+	color:#fff;
+	cursor:pointer;
+}
+.display
+{
+	width:100%;
+	height:140px;
+}
+.top_btn
+{
+	width:100%;
+}
+.top_btn ul li
+{
+	display:inline-flex;
+	padding:13px 22px;
+	border:1px solid transparent;
+	box-sizing:border-box;
+	color:#fff;
+}
+.top_btn ul li:hover
+{
+		border:1px solid #f1f1f1;
+	    background:rgba(255,255,255,0.3);
+}
+.btns
+{
+	padding:30px 30px;
+	color:#fff;
+	box-sizing:border-box; 
+	color:#fff;
+	font-weight:900;
+	border-left:1px solid rgba(255,255,255,0.3);
+	border-top:1px solid rgba(255,255,255,0.3);
+	text-align:center;
+}
+.btns:hover
+{
+	background:rgba(255,255,255,0.3);
+}
+.btns:nth-child(1),.btns:nth-child(2),.btns:nth-child(3),.btns:nth-child(4),.btns:nth-child(5),
+.btns:nth-child(6),.btns:nth-child(7),.btns:nth-child(8),.btns:nth-child(12),.btns:nth-child(16),.btns:nth-child(20)
+{
+	background:#262626;
+	border-right:1px solid rgba(255,255,255,0.3);
+}
+.btns:nth-child(17),.btns:nth-child(18),.btns:nth-child(19),.btns:nth-child(20)
+{
+	border-bottom:1px solid rgba(255,255,255,0.3);
+}
+.btns:nth-child(1):hover,.btns:nth-child(2):hover,.btns:nth-child(3):hover,.btns:nth-child(4):hover,.btns:nth-child(5):hover,
+.btns:nth-child(6):hover,.btns:nth-child(7):hover,.btns:nth-child(8):hover,.btns:nth-child(12):hover,.btns:nth-child(16):hover,.btns:nth-child(20):hover
+{
+	background:rgba(255,255,255,0.3);
+}
+.btns:nth-child(24)
+{
+	background:#6600FF;
+}
+.btns:nth-child(24):hover
+{
+	background:rgb(102,0,200);
+}
